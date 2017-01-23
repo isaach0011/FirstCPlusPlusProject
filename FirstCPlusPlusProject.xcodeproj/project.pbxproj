@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF623AA81E368F9B000B8E8C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF623AA71E368F9B000B8E8C /* main.cpp */; };
+		BF623AB11E36937C000B8E8C /* CPlusPlusRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF623AB01E36937C000B8E8C /* CPlusPlusRunner.cpp */; };
+		BF623AB31E36958F000B8E8C /* CPlusPlusController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF623AB21E36958F000B8E8C /* CPlusPlusController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		BF623AA41E368F9B000B8E8C /* FirstCPlusPlusProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstCPlusPlusProject; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF623AA71E368F9B000B8E8C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BF623AB01E36937C000B8E8C /* CPlusPlusRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CPlusPlusRunner.cpp; path = Controller/CPlusPlusRunner.cpp; sourceTree = "<group>"; };
+		BF623AB21E36958F000B8E8C /* CPlusPlusController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CPlusPlusController.cpp; path = Controller/CPlusPlusController.cpp; sourceTree = "<group>"; };
+		BF623AB41E369872000B8E8C /* CPlusPlusController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CPlusPlusController.h; path = Controller/CPlusPlusController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		BF623AA61E368F9B000B8E8C /* FirstCPlusPlusProject */ = {
 			isa = PBXGroup;
 			children = (
-				BF623AA71E368F9B000B8E8C /* main.cpp */,
+				BF623AB01E36937C000B8E8C /* CPlusPlusRunner.cpp */,
+				BF623AB21E36958F000B8E8C /* CPlusPlusController.cpp */,
+				BF623AB41E369872000B8E8C /* CPlusPlusController.h */,
 			);
 			path = FirstCPlusPlusProject;
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF623AA81E368F9B000B8E8C /* main.cpp in Sources */,
+				BF623AB11E36937C000B8E8C /* CPlusPlusRunner.cpp in Sources */,
+				BF623AB31E36958F000B8E8C /* CPlusPlusController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +252,7 @@
 				BF623AAD1E368F9B000B8E8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
