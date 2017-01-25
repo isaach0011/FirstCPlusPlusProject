@@ -60,11 +60,19 @@
 		BF623AA61E368F9B000B8E8C /* FirstCPlusPlusProject */ = {
 			isa = PBXGroup;
 			children = (
-				BF623AB01E36937C000B8E8C /* CPlusPlusRunner.cpp */,
-				BF623AB21E36958F000B8E8C /* CPlusPlusController.cpp */,
-				BF623AB41E369872000B8E8C /* CPlusPlusController.h */,
+				BFCCB75C1E39336C00EF0542 /* Controller */,
 			);
 			path = FirstCPlusPlusProject;
+			sourceTree = "<group>";
+		};
+		BFCCB75C1E39336C00EF0542 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF623AB21E36958F000B8E8C /* CPlusPlusController.cpp */,
+				BF623AB01E36937C000B8E8C /* CPlusPlusRunner.cpp */,
+				BF623AB41E369872000B8E8C /* CPlusPlusController.h */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

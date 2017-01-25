@@ -11,6 +11,8 @@
 
 class CPlusPlusController
 {
+private:
+    void coolio();
 public:
     void start();
 };
