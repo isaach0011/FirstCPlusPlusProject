@@ -13,6 +13,11 @@ class CPlusPlusController
 {
 private:
     void coolio();
+    void guidedCalculator();
+    void calculator();
+    void useNumbers(int suppliedNumber);
+    int impactNumber();
+    void usePointerToChange(int * somePointer);
 public:
     void start();
 };
