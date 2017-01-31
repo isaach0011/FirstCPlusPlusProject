@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF30F9C31E411FBB00A2F470 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF30F9C11E411FBB00A2F470 /* Timer.cpp */; };
 		BF623AB11E36937C000B8E8C /* CPlusPlusRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF623AB01E36937C000B8E8C /* CPlusPlusRunner.cpp */; };
 		BF623AB31E36958F000B8E8C /* CPlusPlusController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF623AB21E36958F000B8E8C /* CPlusPlusController.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF30F9C11E411FBB00A2F470 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
+		BF30F9C21E411FBB00A2F470 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 		BF623AA41E368F9B000B8E8C /* FirstCPlusPlusProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstCPlusPlusProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF623AB01E36937C000B8E8C /* CPlusPlusRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CPlusPlusRunner.cpp; path = Controller/CPlusPlusRunner.cpp; sourceTree = "<group>"; };
 		BF623AB21E36958F000B8E8C /* CPlusPlusController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CPlusPlusController.cpp; path = Controller/CPlusPlusController.cpp; sourceTree = "<group>"; };
@@ -41,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF30F9C01E411F7F00A2F470 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF30F9C11E411FBB00A2F470 /* Timer.cpp */,
+				BF30F9C21E411FBB00A2F470 /* Timer.hpp */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		BF623A9B1E368F9B000B8E8C = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +72,7 @@
 		BF623AA61E368F9B000B8E8C /* FirstCPlusPlusProject */ = {
 			isa = PBXGroup;
 			children = (
+				BF30F9C01E411F7F00A2F470 /* Model */,
 				BFCCB75C1E39336C00EF0542 /* Controller */,
 			);
 			path = FirstCPlusPlusProject;
@@ -132,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF30F9C31E411FBB00A2F470 /* Timer.cpp in Sources */,
 				BF623AB11E36937C000B8E8C /* CPlusPlusRunner.cpp in Sources */,
 				BF623AB31E36958F000B8E8C /* CPlusPlusController.cpp in Sources */,
 			);
