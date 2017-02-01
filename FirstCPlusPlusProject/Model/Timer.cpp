@@ -38,6 +38,6 @@ long Timer :: getExecutionTimeInMicroseconds()
 
 void Timer :: displayTimerInformation()
 {
-    cout << "It took this long to execute: " << executionTime << endl;
+    cout << "It took this long to execute: " << executionTime << " microseconds." << endl;
     cout << "That is this many seconds: " << executionTime/CLOCKS_PER_SEC << endl;
 }

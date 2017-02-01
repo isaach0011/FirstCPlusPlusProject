@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include "../Model/Timer.hpp"
 #include "CPlusPlusController.h"
 
 using namespace std;
@@ -61,6 +62,10 @@ void CPlusPlusController :: start()
         cout << "Changing with a pointer" << endl;
         usePointerToChange(numberPointer);
         cout << "See how the number has been changed: " << myNumber << endl;
+    }
+    if (program == "timer")
+    {
+        this->testTimer();
     }
 }
 
@@ -224,4 +229,14 @@ void CPlusPlusController :: useNumbers(int suppliedNumber)
 int CPlusPlusController :: impactNumber()
 {
     return 8765432;
+}
+
+void CPlusPlusController :: testTimer()
+{
+    Timer afternoonTime;
+    
+    afternoonTime.startTimer();
+    afternoonTime.stopTimer();
+    afternoonTime.displayTimerInformation();
+    
 }
