@@ -19,49 +19,69 @@ void CPlusPlusController :: usePointerToChange(int * pointedTo)
 
 void CPlusPlusController :: start()
 {
-    cout << "What would you like to run?" << endl;
-    string program;
-    cin >> program;
-    if (program == "coolio")
+    int i = 1;
+    while(i == 1)
     {
-        this->coolio();
-    }
-    if (program == "Guided Calculator")
-    {
-        this->guidedCalculator();
-    }
-    if (program == "calculator")
-    {
-        this->calculator();
-    }
-    if (program == "numbers")
-    {
-        int myNumber = 9;
+        cout << "What would you like to run?" << endl;
+        cout << "coolio,  Guilded Calculator,  numbers,  pointer,  timer" << endl;
+        string program;
+        cin >> program;
+        if (program == "coolio")
+        {
+            i++;
+            this->coolio();
+        }
+        if (program == "Guided Calculator")
+        {
+            i++;
+            this->guidedCalculator();
+        }
+        if (program == "calculator")
+        {
+            i++;
+            this->calculator();
+        }
+        if (program == "numbers")
+        {
+            i++;
+            int myNumber = 9;
         
-        cout << "Starting with: " << myNumber << endl;
-        useNumbers(myNumber);
-        cout << "Look no change: " << myNumber << endl;
+            cout << "Starting with: " << myNumber << endl;
+            useNumbers(myNumber);
+            cout << "Look no change: " << myNumber << endl;
         
-        cout << "Changing a value" << endl;
-        myNumber = impactNumber();
-        cout << "See - impacted " << myNumber << endl;
-    }
-    if (program == "pointer")
-    {
-        int myNumber = 9;
-        int * numberPointer = &myNumber;
+            cout << "Changing a value" << endl;
+            myNumber = impactNumber();
+            cout << "See - impacted " << myNumber << endl;
+        }
+        if (program == "pointer")
+        {
+            i++;
+            int myNumber = 9;
+            int * numberPointer = &myNumber;
         
-        cout << "Starting with: " << myNumber << endl;
-        useNumbers(myNumber);
-        cout << "Look no change: " << myNumber << endl;
+            cout << "Starting with: " << myNumber << endl;
+            useNumbers(myNumber);
+            cout << "Look no change: " << myNumber << endl;
         
-        cout << "Changing a value" << endl;
-        myNumber = impactNumber();
-        cout << "See - impacted " << myNumber << endl;
+            cout << "Changing a value" << endl;
+            myNumber = impactNumber();
+            cout << "See - impacted " << myNumber << endl;
         
-        cout << "Changing with a pointer" << endl;
-        usePointerToChange(numberPointer);
-        cout << "See how the number has been changed: " << myNumber << endl;
+            cout << "Changing with a pointer" << endl;
+            usePointerToChange(numberPointer);
+            cout << "See how the number has been changed: " << myNumber << endl;
+        }
+        if (program == "timer")
+        {
+            i++;
+            this->testTimer();
+        }
+        else
+        {
+            cout << "Not a valid program." << endl;
+            cout << "Please type in a valid program." << endl;
+        }
     }
 }
 
@@ -225,4 +245,12 @@ void CPlusPlusController :: useNumbers(int suppliedNumber)
 int CPlusPlusController :: impactNumber()
 {
     return 8765432;
+}
+
+void CPlusPlusController :: testTimer()
+{
+    Timer currentTime;
+    currentTime.startTimer();
+    currentTime.stopTimer();
+    currentTime.displayTimerInformation();
 }

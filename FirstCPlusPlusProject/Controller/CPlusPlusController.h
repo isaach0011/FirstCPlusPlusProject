@@ -18,6 +18,7 @@ private:
     void useNumbers(int suppliedNumber);
     int impactNumber();
     void usePointerToChange(int * somePointer);
+    void testTimer();
 public:
     void start();
 };
