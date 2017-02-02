@@ -63,10 +63,6 @@ void CPlusPlusController :: start()
         usePointerToChange(numberPointer);
         cout << "See how the number has been changed: " << myNumber << endl;
     }
-    if (program == "timer")
-    {
-        this->testTimer();
-    }
 }
 
 void CPlusPlusController :: coolio()
@@ -229,14 +225,4 @@ void CPlusPlusController :: useNumbers(int suppliedNumber)
 int CPlusPlusController :: impactNumber()
 {
     return 8765432;
-}
-
-void CPlusPlusController :: testTimer()
-{
-    Timer afternoonTime;
-    
-    afternoonTime.startTimer();
-    afternoonTime.stopTimer();
-    afternoonTime.displayTimerInformation();
-    
 }
